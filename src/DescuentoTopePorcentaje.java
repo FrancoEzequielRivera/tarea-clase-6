@@ -11,7 +11,7 @@ public class DescuentoTopePorcentaje implements Descuento{
     @Override
     public Double calcularElDescuento(Double total) {
         porcentaje = total * porcentaje / 100;
-        descuentoTope = total * porcentaje / 100;
+        descuentoTope = total * tope / 100;
 
         if(porcentaje > descuentoTope){
             return descuentoTope;
